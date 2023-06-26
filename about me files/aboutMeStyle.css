@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header-before {
+    width: 25px;
+    height: 60px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+.links ul li a {
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.links #about-span {
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    margin-left: 15px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+#home:hover,
+#services:hover,
+#portfolio:hover,
+#contact:hover {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 993px) {
+    .header-before {
+        display: none;
+    }
+
+    .links #about-span {
+        display: none;
+    }
+}
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    height: 589px;
+    background: url("/images/images/about-me-image-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 10px;
+    z-index: -22;
+}
+
+#return-to-top {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(131, 131, 131, 0.4);
+    transition: .5s ease;
+}
+
+#return-to-top:hover {
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+    color: #DB0157;
+    transform: scale(.9);
+    box-shadow: 5px 10px 12px rgba(131, 131, 131, 0.4);
+}
+
+.whatsapp-contact {
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 10px 12px rgba(156, 156, 156, 0.35);
+    transition: .5s ease;
+}
+
+.whatsapp-contact a {
+    text-decoration: none;
+    color: #32D951;
+}
+
+.whatsapp-contact:hover {
+    transform: scale(.9);
+    box-shadow: 2px 12px 12px rgba(156, 156, 156, 0.35);
+    background: #32D951;
+}
+
+.whatsapp-contact:hover a {
+    color: #FDFDFD;
+}
+
+.about-me-section .about-me-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-me-section .about-me-info .info h1 {
+    text-transform: capitalize;
+    font-size: 70px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me-section .about-me-info .about-me-desc p {
+    font-size: 25px;
+    color: #878787;
+}
+
+.section1 hr {
+    position: relative;
+    top: 42px;
+    right: 35px;
+    width: 25px;
+    height: 5px;
+    opacity: 1;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+.lets-talk-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to left, #F6F6F6, #EBEBEB, #D9D9D9);
+    padding: 80px;
+    height: 500px;
+    box-shadow: 0 0 12px rgba(125, 125, 125, 0.2);
+    margin-top: 80px;
+}
+
+.lets-talk-section .info .head-title {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.lets-talk-section .lets-desc {
+    font-size: 23px;
+    color: #777777;
+    margin-top: 5px;
+}
+
+.lets-talk-section .get-started a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.lets-talk-section .get-started {
+    border: none;
+    padding: 16px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    margin-top: 25px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 8px 10px 15px rgba(56, 56, 56, 0.25);
+    transition: .5s ease;
+}
+
+.lets-talk-section .get-started:hover {
+    transform: scale(.9);
+    box-shadow: 10px 15px 15px rgba(56, 56, 56, 0.25);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+footer .footer .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+
+footer .footer .columns .title {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+footer .footer .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+footer .footer .columns .footer-desc {
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .footer .columns .email,
+.phone-number {
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .footer .columns ul li {
+    list-style: none;
+}
+
+footer .footer .columns ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+}
+
+footer .footer .columns .column3 .footer-desc ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+footer .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .footer .logo img {
+    width: 200px;
+}
+
+footer .copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 22px;
+    background: linear-gradient(to right, #F6F6F6, #EBEBEB, #D9D9D9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-icons .social-media-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 9999999999;
+}
+
+.about-me-icons .social-media-icons a:hover {
+    transform: scale(.9);
+}
+
+.about-me-icons .social-media-icons a {
+    filter: drop-shadow(5px 10px 12px rgba(0, 0, 0, 0.2));
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.about-me-icons .mostaql-icon,
+.about-me-icons .behance-icon,
+.about-me-icons .instagram-icon,
+.about-me-icons .youtube-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffff;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.about-me-icons .social-media-icons i {
+    -webkit-text-fill-color: #DB0157;
+    font-size: 20px;
+}
+
+.about-me-icons .ellipse {
+    width: 20px;
+    height: 20px;
+    background: #DB0157;
+    border-radius: 100px;
+}
+
+footer .footer .columns .cloumn3 .footer-desc ul li a {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.column4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-section .about-me-info h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.about-me-section .about-me-info .about-me-desc p {
+    font-size: 20px;
+    color: #878787;
+}
+
+.section1 hr {
+    position: relative;
+    top: 38px;
+    right: 30px;
+    width: 20px;
+    height: 4px;
+    opacity: 1;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+@media (max-width: 830px) {
+
+    .image {
+        height: 400px;
+    }
+
+    .about-me-section .about-me-info .info h1 {
+        text-transform: capitalize;
+        font-size: 35px;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .image {
+        height: 300px;
+    }
+
+    .about-me-section .about-me-info .info h1 {
+        text-transform: capitalize;
+        font-size: 30px;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .about-me-section .info .about-me-info .about-me-desc p {
+        font-size: 18px;
+        color: #878787;
+    }
+
+    .section1 hr {
+        position: relative;
+        top: 34px;
+        right: 30px;
+        width: 15px;
+        height: 3px;
+        opacity: 1;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+    }
+}
+
+@media (max-width: 570px) {
+
+    .about-me-section .about-me-info .info h1 {
+        text-transform: capitalize;
+        font-size: 30px;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        height: 250px;
+    }
+
+    .about-me-section .about-me-info .info .about-me-desc p {
+        font-size: 15px;
+        color: #878787;
+    }
+
+    .section1 hr {
+        position: relative;
+        top: 30px;
+        right: 20px;
+        width: 10px;
+        height: 2px;
+        opacity: 1;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+    }
+}
+
+@media (max-width: 460px) {
+
+    .about-me-section .about-me-info .info h1 {
+        text-transform: capitalize;
+        font-size: 25px;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .about-me-section .about-me-info .info .about-me-desc p {
+        font-size: 12px;
+        color: #878787;
+    }
+
+    .section1 hr {
+        position: relative;
+        top: 28px;
+        right: 15px;
+        width: 8px;
+        height: 1px;
+        opacity: 1;
+        background: linear-gradient(to right, #DB0157, #7A1450);
+    }
+}

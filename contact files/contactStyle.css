@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+}
+
+hr {
+    position: relative;
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 3px;
+    opacity: 1;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-before {
+    width: 25px;
+    height: 60px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+.links ul li a {
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.links #contact-span {
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    margin-left: 15px;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+}
+
+#home:hover,
+#about-me:hover,
+#services:hover,
+#portfolio:hover {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 993px) {
+    .header-before {
+        display: none;
+    }
+
+    .links #contact-span {
+        display: none;
+    }
+}
+
+#return-to-top {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(131, 131, 131, 0.4);
+    transition: .5s ease;
+}
+
+#return-to-top:hover {
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+    color: #DB0157;
+    transform: scale(.9);
+    box-shadow: 5px 10px 12px rgba(131, 131, 131, 0.4);
+}
+
+.contact-section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-section .info h2 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section .info p {
+    color: #4D4D4D;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.contact-section .cards {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+}
+
+.contact-section .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+    border: none;
+    transition: all 1s ease;
+    box-shadow: 0 15px 16px rgba(118, 118, 118, 0.25);
+}
+
+.contact-section .cards .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 18px 20px rgba(118, 118, 118, 0.25);
+}
+
+.contact-section .cards .card i {
+    color: #CCCCCC;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.contact-section .cards .card h5 {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-section .cards .card p {
+    font-size: 20px;
+    color: #9f9f9f;
+    font-weight: 500;
+}
+
+.form-section {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 150px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section #name-field,
+#email-field {
+    margin-bottom: 20px;
+}
+
+.form-section #name-field,
+#email-field,
+#phone-field {
+    width: 800px;
+    height: 60px;
+    display: flex;
+    background: none;
+    padding: 0 20px;
+    outline: none;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9) padding-box,
+        linear-gradient(to right, #DB0157, #7A1450) border-box;
+    border-radius: 10px;
+    border: 2.5px solid transparent;
+}
+
+.form-section #message-field {
+    width: 800px;
+    height: 180px;
+    display: flex;
+    background: none;
+    padding: 20px;
+    outline: none;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9) padding-box,
+        linear-gradient(to right, #DB0157, #7A1450) border-box;
+    border-radius: 10px;
+    border: 2.5px solid transparent;
+}
+
+.form-section #send-message {
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 160px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 15px 16px rgba(151, 151, 151, 0.4);
+    transition: .5s ease;
+}
+
+.form-section #send-message:hover {
+    transform: scale(.9);
+    box-shadow: 2px 18px 18px rgba(135, 135, 135, 0.4);
+}
+
+.form-section #phone-field {
+    padding-left: 45px;
+}
+
+.form-section #phone-field {}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #DB0157, #7A1450);
+    width: 100%;
+    height: 550px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer .footer .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+
+footer .footer .columns .title {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+footer .footer .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+footer .footer .columns .footer-desc {
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .footer .columns .email,
+.phone-number {
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .footer .columns ul li {
+    list-style: none;
+}
+
+footer .footer .columns ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+}
+
+footer .footer .columns .column3 .footer-desc ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: red;
+}
+
+footer .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .footer .logo img {
+    width: 200px;
+}
+
+footer .copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 22px;
+    background: linear-gradient(to right, #F6F6F6, #EBEBEB, #D9D9D9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-icons .social-media-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 9999999999;
+}
+
+.about-me-icons .social-media-icons a:hover {
+    transform: scale(.9);
+}
+
+.about-me-icons .social-media-icons a {
+    filter: drop-shadow(5px 10px 12px rgba(0, 0, 0, 0.2));
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.about-me-icons .mostaql-icon,
+.about-me-icons .behance-icon,
+.about-me-icons .instagram-icon,
+.about-me-icons .youtube-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffff;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.about-me-icons .social-media-icons i {
+    -webkit-text-fill-color: #DB0157;
+    font-size: 20px;
+}
+
+.about-me-icons .ellipse {
+    width: 20px;
+    height: 20px;
+    background: #DB0157;
+    border-radius: 100px;
+}
+
+footer .footer .columns .cloumn3 .footer-desc ul li a {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.column4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .contact-section .info h2 {
+        font-size: 50px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .contact-section .info p {
+        font-size: 20px;
+    }
+
+    .contact-section .cards .card {
+        width: 300px;
+        height: 220px;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+
+    .contact-section .cards .card i {
+        font-size: 50px;
+    }
+
+    .contact-section .cards .card h5 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .contact-section .cards .card p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .form-section #name-field,
+    #email-field,
+    #phone-field {
+        display: flex;
+        width: 600px;
+        height: 50px;
+        padding: 0 20px;
+        border-radius: 10px;
+    }
+
+    .form-section #message-field {
+        width: 600px;
+    }
+}
+
+@media (max-width: 750px) {
+    .contact-section .info h2 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .contact-section .info p {
+        font-size: 18px;
+    }
+
+    .contact-section .cards .card {
+        width: 240px;
+        height: 180px;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+
+    .contact-section .cards .card i {
+        font-size: 40px;
+    }
+
+    .contact-section .cards .card h5 {
+        font-size: 18px;
+    }
+
+    .contact-section .cards .card p {
+        font-size: 16px;
+    }
+
+    .form-section #name-field,
+    #email-field,
+    #phone-field {
+        display: flex;
+        width: 600px;
+        height: 50px;
+        padding: 0 20px;
+        border-radius: 10px;
+    }
+
+    .form-section #message-field {
+        width: 600px;
+    }
+
+    .contact-section .cards {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 630px) {
+    .contact-section .info h2 {
+        font-size: 30px;
+    }
+
+    .contact-section .info p {
+        font-size: 16px;
+    }
+
+    .contact-section .info {
+        transform: scale(.95);
+    }
+
+    .contact-section .cards .card {
+        width: 220px;
+        height: 170px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+    .contact-section .cards .card i {
+        font-size: 30px;
+    }
+
+    .contact-section .cards .card h5 {
+        font-size: 16px;
+    }
+
+    .contact-section .cards .card p {
+        font-size: 15px;
+    }
+
+    .form-section #name-field,
+    #email-field,
+    #phone-field {
+        width: 500px;
+    }
+
+    .form-section #message-field {
+        width: 500px;
+    }
+
+    .contact-section .cards {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 570px) {
+    .contact-section .cards {
+        grid-template-columns: 100%;
+    }
+
+    .contact-section .cards .card {
+        width: 280px;
+        height: 220px;
+    }
+
+    .contact-section .cards .card i {
+        font-size: 40px;
+    }
+
+    .contact-section .cards .card h5 {
+        font-size: 20px;
+    }
+
+    .contact-section .cards .card p {
+        font-size: 18px;
+    }
+
+    .contact-section .info h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .contact-section .info p {
+        font-size: 16px;
+    }
+
+    .form-section #name-field,
+    #email-field,
+    #phone-field {
+        width: 400px;
+    }
+
+    .form-section #message-field {
+        width: 400px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .form-section #name-field,
+    #email-field,
+    #phone-field {
+        width: 340px;
+    }
+
+    .form-section #message-field {
+        width: 340px;
+    }
+
+    .form-section #send-message {
+        font-size: 18px;
+    }
+}
+
+#danger-alert,
+#success-alert {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 99999;
+}
+
+.whatsapp-contact a {
+    text-decoration: none;
+    color: #32D951;
+}
+
+.whatsapp-contact {
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right, #fff, #FDFDFD, #F6F6F6, #EBEBEB, #D9D9D9);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 10px 12px rgba(156, 156, 156, 0.35);
+    transition: .5s ease;
+}
+
+.whatsapp-contact:hover {
+    transform: scale(.9);
+    box-shadow: 2px 12px 12px rgba(156, 156, 156, 0.35);
+    background: #32D951;
+}
+
+.whatsapp-contact:hover a {
+    color: #FDFDFD;
+}
